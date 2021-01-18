@@ -1,7 +1,7 @@
 # Личный проект «Нёрдс»
 
 * Студент: [Александр Гвоздев](https://up.htmlacademy.ru/htmlcss/30/user/1685421).
-* Наставник: Максим Петрищак.
+* Наставник: [Максим Петрищак](https://htmlacademy.ru/profile/maksim_petrishchak).
 
 ---
 
