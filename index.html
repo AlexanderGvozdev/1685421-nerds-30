@@ -17,7 +17,9 @@
           <li><a href="catalog.html">Магазин</a></li>
           <li><a href="blank.html">Контакты</a></li>
         </ul>
-        <a href="blank.html">Корзина</a>
+        <ul>
+          <li><a href="blank.html">Корзина</a></li>
+        </ul>
       </nav>
     </header>
 
@@ -25,47 +27,64 @@
       <h1>Дизайн-студия Нёрдс</h1>
       
       <section>
-        <h2>Долго,  дорого, скрупулёзно</h2>
-        <p>математически выверенный дизайн для вашего сайта</p>
-        <a href="#">Узнать больше</a>
+        <ul class="slider">
+          <li class="slider-item">
+            <div class="slider-text">
+              <h3>Долго, дорого, скрупулёзно</h3>
+              <p>математически выверенный дизайн</p>
+              <a href="#">Узнать больше</a>
+            </div>
+            <img src="https://via.placeholder.com/150x100" alt="" class="slider-image">
+          </li>
+          <li class="slider-item">
+            <div class="slider-text"></div>
+            <img src="https://via.placeholder.com/150x100" alt="" class="slider-image">
+          </li>
+          <li class="slider-item">
+            <div class="slider-text"></div>
+            <img src="https://via.placeholder.com/150x100" alt="" class="slider-image">
+          </li>
+        </ul>
       </section>
-
+      
       <section>
+       <ul>
         <img src="https://via.placeholder.com/150x100" alt="">
-        <h2>веб-сайты</h2>
-        <p>Мир никогда не будет прежним<br> после того как увидит наш сайт!</p>
-        <a href="#">заказать</a>
-      </section>
+        <li>веб-сайты</li>
+        <li>Мир никогда не будет прежним<br> после того как увидит наш сайт!</li>
+        <li><a href="#">заказать</a></li>
+       </ul>
+       
+       <ul>
+        <img src="https://via.placeholder.com/150x100" alt="">
+        <li>приложения</li>
+        <li>Покорите топ-10 приложений<br> в AppStore и Google Play</li>
+        <li><a href="#">заказать</a></li>
+       </ul>
 
-      <section>
+       <ul>
         <img src="https://via.placeholder.com/150x100" alt="">
-        <h2>приложения</h2>
-        <p>Покорите топ-10 приложений<br> в AppStore и Google Play</p>
-        <a href="#">заказать</a>
-      </section>
-
-      <section>
-        <img src="https://via.placeholder.com/150x100" alt="">
-        <h2>презентации</h2>
-        <p>Вы даже не подозреваете,<br> насколько вы изумительны!</p>
-        <a href="#">заказать</a>
+        <li>презентации</li>
+        <li>Вы даже не подозреваете,<br> насколько вы изумительны!</li>
+        <li><a href="#">заказать</a></li>
+       </ul>
       </section>
 
       <section>
        <h2>Мы - маленькая, но гордая<br>дизайн-студия из Краснодара </h2>
        <p>Исповедуем принципи минимализма и чистоты. Ставим математический расчёт<br> превыше креатива. Работаем не покладая рук, как роботы</p>
-      </section>
+      
 
-      <section>
+      
         <h3>Выполняем заказы на разработку</h3>
         <ul>
           <li>Веб-сайтов любой сложности</li>
           <li>Мобильных приложений для IOS и Android</li>
           <li>Слайдшоу и видео для корпоративных презентаций</li>
         </ul>
-      </section>
+      
 
-      <section>
+      
         <img src="https://via.placeholder.com/150x100" alt="">
         <h3>с 2004 года любим точность во всём:</h3>
         <ul>
@@ -83,8 +102,6 @@
           </li>
         </ul>
       </section>
-    </main>
-    <footer>
       <section>
         <h2>Ссылки на партнёров</h2>
         <a>
@@ -100,7 +117,9 @@
           <img src="https://via.placeholder.com/150x100" alt="">
         </a>
       </section>
-
+    </main>
+    <footer>
+      
       <section>
         <h2>Как проехать</h2>
         <!-- Здесь будет карта,но потом -->
@@ -122,6 +141,29 @@
         </ul>
       </section>
     </footer>
+    <section>
+      <h2>Напишите нам</h2>
+      <form action="https://echo.htmlacademy.ru" method="post">
+        <p>
+          <label for="login-login">Ваше имя</label>
+          <input id="login-login" type="login" name="login" placeholder="Имя Фамилия">
+        </p>
+        <p>
+          <label for="email-amail">Ваш email</label>
+          <input id="email-email" type="email" name="email" placeholder="emaile@example.com">
+          
+          
+        </p>
+        <p>
+          <label for="text-text">Текст письма</label>
+          <input id="text-text" type="text" name="text" placeholder="в свободной форме">
+        </p>
+
+        
+        <button type="submit">отправить</button>
+      </form>
+      <button type="button">Закрыть</button>
+    </section>
     
   </body>
 </html>
