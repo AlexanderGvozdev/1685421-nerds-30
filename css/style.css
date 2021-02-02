@@ -35,6 +35,11 @@
   grid-template-rows: min-content 1fr min-content;
   align-content: start;
 }
+.container {
+  width: 1160px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
 .main-header {
   background-color: var(--basic-gray);
 }
@@ -44,11 +49,6 @@ a {
 img {
   max-width: 100%;
   height: auto;
-}
-.main {
-  width: 1160px;
-  margin: 0 auto;
-  padding: 0 10px;
 }
 
 .main-navigation {
@@ -95,9 +95,14 @@ img {
 }
 .slider-section {
   background-color: var(--basic-gray);
+  margin-bottom: 80px;
 }
-
+.slider-container {
+  order: -1;
+}
 .slider-item {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
   text-align: left;
 }
 .slider-item h3 {
@@ -105,14 +110,14 @@ img {
   line-height: 55px;
 }
 .features {
-    margin-bottom: 80px;
+  margin-bottom: 80px;
 }
 .features-list {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    column-gap: 100px;  
-    margin: 0;
-    padding: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 100px;
+  margin: 0;
+  padding: 0;
 }
 .features-item {
   text-align: left;
@@ -122,18 +127,17 @@ img {
   line-height: 30px;
 }
 .description {
-    margin-bottom: 75px;
+  margin-bottom: 75px;
 }
-.dcs {
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    column-gap: 150px;  
-    margin: 0;
-    padding: 0;
-
+.desc-container {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  column-gap: 150px;
+  margin: 0;
+  padding: 0;
 }
 .desc-list {
-    text-align: left;
+  text-align: left;
 }
 .description-item b {
   font-size: 16px;
@@ -141,6 +145,7 @@ img {
 }
 .desc-list-2 {
   text-align: center;
+  justify-self: end;
 }
 
 .description-item-2 b {
@@ -153,7 +158,6 @@ img {
 .partners-list {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-
 }
 .features,
 .description {
@@ -211,13 +215,13 @@ img {
   color: var(--basic-black);
   background-color: var(--basic-white);
 }
-.map {
-  
-  
-  
+.social-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
 .social-list {
   width: 100px;
+  order: -1;
 }
 .social-list h2 {
   font-size: 36px;
