@@ -252,7 +252,16 @@ img {
 .contact-form-item {
   font: inherit;
 }
+.page-catalog {
+  display: grid;
+  grid-template-columns: 260px 1fr;
+  
+}
 .title-catalog {
+  grid-column: 1 / -1;
+  padding-top: 72px;
+  margin-top: 0;
+  padding-bottom: 110px;
   font-size: 55px;
   line-height: 55px;
   background-color: var(--basic-gray);
@@ -264,9 +273,12 @@ img {
   line-height: 18px;
   color: var(--basic-black);
 }
-.catalog-section h3 {
+.catalog-section .title-sorting-list {
   font-size: 18px;
   line-height: 30px;
+}
+.catalog-list {
+  margin-left: 140px;
 }
 .title-filter {
   font-size: 18px;
@@ -302,7 +314,7 @@ img {
   min-width: 360px;
   min-height: 580px;
 }
-.catalog-item p {
+.catalog-item .description-catalog-item {
   font-size: 16px;
   line-height: 18px;
   color: var(--basic-color-catalog-paragraph);
@@ -310,9 +322,9 @@ img {
 .catalog-item:hover {
   background-color: var(--basic-gray);
 }
-.catalog-item h3 {
+.catalog-item .name-catalog-item {
   color: var(--basic-black);
 }
-.catalog-item h3:hover {
+.catalog-item .name-catalog-item:hover {
   color: var(--basic-red);
 }
