@@ -59,6 +59,7 @@ img {
 .main-navigation {
   display: grid;
   grid-template-columns: 159px 1fr min-content;
+  gap: 45px;
   font-size: 16px;
   line-height: 30px;
   color: var(--basic-black);
@@ -153,6 +154,7 @@ img {
 .partners-list {
   display: grid;
   grid-template-columns: repeat(4,1fr);
+  gap: 100px;
 }
 .features,
 .description {
@@ -314,7 +316,7 @@ img {
   min-width: 360px;
   min-height: 580px;
 }
-.catalog-item .description-catalog-item {
+.catalog-item .catalog-item-description {
   font-size: 16px;
   line-height: 18px;
   color: var(--basic-color-catalog-paragraph);
@@ -322,9 +324,9 @@ img {
 .catalog-item:hover {
   background-color: var(--basic-gray);
 }
-.catalog-item .name-catalog-item {
+.catalog-item .catalog-item-name {
   color: var(--basic-black);
 }
-.catalog-item .name-catalog-item:hover {
+.catalog-item .catalog-item-name:hover {
   color: var(--basic-red);
 }
