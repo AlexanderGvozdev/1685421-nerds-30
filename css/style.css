@@ -72,6 +72,10 @@ img {
   list-style: none;
 }
 .site-navigation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 45px;
   margin: 0;
   padding: 0;
 }
@@ -157,7 +161,9 @@ img {
 .partners-list {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
+  align-items: center;
   gap: 100px;
+  height: 180px;
 }
 .features,
 .description {
@@ -332,6 +338,13 @@ img {
 .form-submit-button:active,
 .pagination-item:active {
   background-color: var(--basic-pressing-gray);
+}
+.pagination-list {
+  display: flex;
+  justify-content: flex-start;
+  gap: 11px;
+  margin: 0;
+  padding: 0;
 }
 .pagination-item a {
   color: var(--basic-black);
