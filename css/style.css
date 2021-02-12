@@ -437,10 +437,9 @@ img {
   font-size: 18px;
   line-height: 30px;
   font-weight: bold;
+  vertical-align: middle;
+  height: 133px;
   margin-bottom: 16px;
-}
-.form-section {
-  margin-top: 55px;
 }
 
 .form-fieldset li {
@@ -501,21 +500,25 @@ img {
 .pagination-item a {
   color: var(--basic-black);
 }
-.sorting-grid-container {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  margin-top: 30px;
+.sorting-flex-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0;
+  padding: 0;
   outline-offset: -5px;
   outline: 5px solid rgba(59, 55, 59, 0.7);
-  height: 95px;
+  height: 133px;
+}
+.title-sorting-list {
+ width: 360px;
 }
 .sorting {
+  width: 360px;
   padding: 0;
   margin: 0;
   display: flex;
-  justify-content: flex-start;
-  padding-top: 20px;
-  padding-left: 20px;
+  justify-content: space-between;
   gap: 25px;
   outline-offset: -5px;
   outline: 5px solid rgba(255, 0, 255, 0.7);
