@@ -81,7 +81,7 @@
 
   <main class="main">
     <div class="container">
-      <h1>Дизайн-студия Нёрдс</h1>
+      <h1 class="visually-hidden">Дизайн-студия Нёрдс</h1>
 
 
 
@@ -155,10 +155,10 @@
         </div>
       </section>
       <section class="partners">
-        <h2>Ссылки на партнёров</h2>
+        <h2 class="visually-hidden">Ссылки на партнёров</h2>
         <ul class="partners-list list-reset">
           <li class="partners-item"><a href="https://htmlacademy.ru/intensive/htmlcss"><img
-                src="img/logo-htmlacademy.svg" width="199" height="68" alt="html Academy"></a></li>
+                src="img/logo-htmlacademy.png" width="199" height="68" alt="html Academy"></a></li>
           <li class="partners-item"><a href="#"><img src="img/logo-barbershop.png" width="209" height="90"
                 alt="барбершоп"></a></li>
           <li class="partners-item"><a href="#"><img src="img/logo-programm.png" width="185" height="52"
@@ -172,7 +172,7 @@
   <footer class="page-footer">
     <section class="map">
       <div class="container">
-        <h2>Как проехать</h2>
+        <h2 class="visually-hidden">Как проехать</h2>
         <img src="img/map.jpg" width="1440" height="416" alt="наше местонахождение">
       </div>
     </section>
@@ -199,6 +199,7 @@
   <section class="modal">
     <h2>Напишите нам</h2>
     <form class="contact-form" action="https://echo.htmlacademy.ru" method="post">
+      <div class="contact-form-grid-container">
       <p class="contact-form-item">
         <label for="login-login">Ваше имя</label>
         <input class="contact-form-field" id="login-login" type="text" name="login" placeholder="Имя Фамилия">
@@ -213,6 +214,7 @@
         <label for="text-text">Текст письма</label>
         <textarea id="text-text" name="text">в свободной форме</textarea>
       </p>
+      </div>
 
 
       <button class="button contact-form-submit" type="submit">отправить</button>
