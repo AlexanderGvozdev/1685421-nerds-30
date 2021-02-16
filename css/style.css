@@ -373,16 +373,28 @@ img.slider-image {
   opacity: 0.3;
 }
 .modal {
-  position: relative;
+  display: none;
+  position: fixed;
+  top: 70px;
+  left: 450px;
   color: var(--basic-black);
   background-color: var(--basic-white);
+  box-shadow: 0 30px 50px rgba(0, 0, 0, 0.7);
+  padding: 0 100px;
+  width: 960px;
+  height: 590px;
+  z-index: 2;
 }
 .modal-close {
   position: absolute;
   top: 50px;
-  left: 750px;
+  left: 850px;
   width: 21px;
   height: 21px;
+  border: 0;
+  border: none;
+  background-image: url(../img/cross.svg);
+  background-color: var(--basic-white);
 }
 .modal input {
   border-radius: 3px;
@@ -525,6 +537,21 @@ img.slider-image {
   line-height: 18px;
   color: var(--basic-black);
 }
+.button-up {
+  background-image: url(../img/icon-down.svg);
+  background-color: var(--basic-white);
+  transform: rotate(180deg);
+  width: 11px;
+  height: 10px;
+  border: 0;
+}
+.button-down {
+  background-image: url(../img/icon-down.svg);
+  background-color: var(--basic-white);
+  width: 11px;
+  height: 10px;
+  border: 0;
+}
 .catalog-section .title-sorting-list {
   font-size: 18px;
   line-height: 30px;
@@ -542,8 +569,6 @@ img.slider-image {
 .form-section {
   padding-top: 55px;
   width: 260px;
-  outline-offset: -5px;
-  outline: 5px solid rgba(255, 0, 255, 0.7);
 }
 .title-filter {
   font-size: 18px;
@@ -588,12 +613,17 @@ img.slider-image {
   height: 23px;
   border-radius: 3px;
   border: 2px solid var(--basic-black);
-  opacity: 0.4;
 }
 .filter-input-checkbox:checked + label::after {
   content: "";
   position: absolute;
-  
+  background-image: url(../img/check-mark.svg);
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  width: 20px;
+  height: 16px;
+  left: -22px;
+  top: 5px;
 }
 .filter-input-radio + label::before {
   content: "";
@@ -604,7 +634,6 @@ img.slider-image {
   height: 25px;
   border-radius: 50%;
   border: 2px solid var(--basic-black);
-  opacity: 0.4;
 }
 .filter-input-radio:checked + label::after {
   content: "";
@@ -615,7 +644,6 @@ img.slider-image {
   height: 9px;
   background-color: var(--basic-black);
   border-radius: 50%;
-  opacity: 0.4;
 }
 .form-label {
   font-size: 16px;
@@ -688,6 +716,21 @@ img.slider-image {
   display: flex;
   justify-content: space-between;
   gap: 25px;
+}
+.sorting a,
+.button-up,
+.button-down {
+  opacity: 0.3;
+}
+.sorting a:hover,
+.button-up:hover,
+.button-down:hover {
+  opacity: 0.6;
+}
+.sorting a:active,
+.button-up:active,
+.button-down:active {
+  opacity: 1;
 }
 .catalog-list {
   min-width: 360px;
