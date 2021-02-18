@@ -481,6 +481,7 @@ img {
 .modal h2 {
   font-size: 45px;
   line-height: 1;
+  font-weight: 700;
 }
 .contact-form-flex-container {
   width: 760px;
@@ -500,8 +501,12 @@ img {
 .contact-form-item label {
   display: block;
   margin-bottom: 9px;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 700;
 }
 .contact-form-field {
+  line-height: 18px;
   padding: 16px 14px;
   width: 360px;
   font: inherit;
@@ -831,6 +836,12 @@ img {
 }
 .catalog-item {
   min-height: 580px;
+  display: inline-flex;
+  flex-direction: column;
+  position: relative;
+  cursor: pointer;
+  overflow:hidden;
+  border-radius: 5px;
 }
 .catalog-item img {
   display: block;
@@ -842,6 +853,7 @@ img {
 }
 .catalog-item:hover {
   background-color: var(--basic-gray);
+  box-shadow: 0 30px 50px rgba(0, 0, 0, 0.2);
 }
 .catalog-item-name {
   font-size: 18px;
@@ -859,6 +871,24 @@ img {
   align-items: center;
   text-align: center;
   min-height: 231px;
+  background: var(--basic-gray);
+  position: absolute;
+  z-index: 4;
+  transform: translateY(100%);
+  width: 100%;
+  padding: 10px;
+  bottom: 0;
+  left: 0;
+  transition: transform 0.3s;
+}
+.catalog-item:hover .catalog-modal {
+  transform: translateY(0%);
+}
+.browser-catalog {
+  opacity: 12%;
+}
+.catalog-item:hover .browser-catalog {
+  opacity: 1;
 }
 .button-catalog {
   width: 200px;
