@@ -298,13 +298,14 @@ img {
 .desc-list-2 b {
   font-weight: 700;
   text-transform: uppercase;
-  margin-left: 7px;
+  margin-left: 1px;
 }
 .desc-list-2 img {
-  margin-bottom: 35px;
+  margin-bottom: 31px;
 }
 .desc-list p {
-  margin-bottom: 38px;
+  margin-bottom: 40px;
+  margin-top: -4px;
 }
 .description-item {
   position: relative;
@@ -397,14 +398,17 @@ img {
   background-color: var(--basic-pressing-red);
   color: rgba(255, 255, 255, 0.3);
 }
+.slider-button {
+  margin-left: -2px;
+}
 .feature-button {
   width: 159px;
-  height: 48px;
+  height: 51px;
   font: inherit;
   text-align: center;
   color: var(--basic-white);
   background-color: var(--basic-red);
-  padding: 13px 39px;
+  padding: 15px 39px;
   border-radius: 3px;
   text-transform: uppercase;
 }
