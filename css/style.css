@@ -293,7 +293,6 @@ img {
 .desc-list-2 b {
   font-weight: 700;
   text-transform: uppercase;
-  margin-left: 1px;
 }
 .desc-list-2 img {
   margin-bottom: 31px;
@@ -322,6 +321,8 @@ img {
   text-align: center;
   margin-top: 39px;
   width: 360px;
+  outline: 5px solid #ff0000;
+
 }
 .description-list-2 {
   display: flex;
@@ -356,8 +357,8 @@ img {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   align-items: center;
-  gap: 100px;
- 
+  gap: 86px;
+  padding-left: 31px;
 }
 .partners-item {
   opacity: 0.3;
@@ -367,6 +368,16 @@ img {
 }
 .partners-item:active {
   opacity: 0.2;
+}
+.partners-2 {
+  margin-top: -13px;
+  margin-left: -9px;
+}
+.partners-3 {
+  margin-top: -9px;
+}
+.partners-4 {
+ margin-top: -1px;
 }
 .map {
   max-height: 420px;
@@ -456,12 +467,17 @@ img {
   order: -1;
 }
 .footer-social-title {
-
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  outline: 5px solid #ff0000;
+  margin-top: -16px;
 }
 .social-section h2 {
   font-size: 36px;
   line-height: 36px;
   font-weight: 700;
+  padding-left: 12px;
 }
 .social-section p {
   line-height: 22px;
@@ -474,7 +490,8 @@ img {
   border-radius: 50%;
   width: 81px;
   height: 81px;
-  margin-right: 7px;
+  margin-right: 8px;
+  margin-top: 7px;
 }
 .social-link:hover {
   background-color: var(--basic-cursor-red);
