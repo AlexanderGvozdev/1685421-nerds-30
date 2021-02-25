@@ -332,15 +332,18 @@ img {
   margin-top: 28px;
   padding: 0;
 }
-.description-item-2 {
-  margin-right: 16px;
+.desc-item-1 {
+ margin-right: 21px;
+}
+.desc-item-3 {
+ margin-left: 22px;
 }
 .description-item-2 b {
   font-size: 45px;
   line-height: 64px;
 }
 .percent {
- 
+ font-size: 60%;
 }
 .description-item-2 p {
   line-height: 18px;
