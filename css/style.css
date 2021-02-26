@@ -758,6 +758,7 @@ img {
 }
 .fieldset-1 {
   margin-bottom: 54px;
+  outline: 5px solid #ff0000;
 }
 .fieldset-2 {
   margin-bottom: 28px;
@@ -899,8 +900,7 @@ img {
 }
 .sorting {
   width: 360px;
-  padding: 0;
-  margin: 0;
+  padding-left: 0;
   display: flex;
   justify-content: space-between;
   outline: 5px solid #ff0000;
