@@ -728,9 +728,6 @@ img {
 .form-section {
   padding-top: 51px;
 }
-.order-form {
-  outline: 5px solid #ff0000;
-}
 .title-filter {
   font-size: 18px;
   line-height: 30px;
@@ -756,21 +753,20 @@ img {
 }
 .form-section fieldset {
   padding: 0;
-  margin: 0;
+  margin-left: 0;
   border: none;
-  margin-bottom: 53px;
 }
 .fieldset-1 {
-  
+  margin-bottom: 54px;
 }
 .fieldset-2 {
-
+  margin-bottom: 28px;
 }
 .fieldset-3 {
-
+  margin-bottom: 32px;
 }
 .form-checkbox-list li {
-  margin-bottom: 10px;
+  margin-bottom: 18px;
 }
 .filter-input-checkbox + label::before {
   content: "";
