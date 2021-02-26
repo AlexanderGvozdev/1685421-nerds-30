@@ -459,7 +459,7 @@ img {
 .social-section {
   display: grid;
   grid-template-columns: 1fr 2fr;
-  padding: 43px 0;
+  padding: 58px 0;
 }
 .social-list {
   display: flex;
@@ -474,7 +474,6 @@ img {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  outline: 5px solid #ff0000;
   margin-top: -16px;
 }
 .social-section h2 {
@@ -482,9 +481,12 @@ img {
   line-height: 36px;
   font-weight: 700;
   padding-left: 12px;
+  margin-top: 29px;
 }
 .social-section p {
   line-height: 22px;
+  margin-top: -20px;
+  margin-left: 13px;
 }
 .social-link {
   display: flex;
