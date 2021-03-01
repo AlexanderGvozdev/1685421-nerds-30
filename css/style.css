@@ -146,8 +146,17 @@ img {
 .user-list a:active {
   color: var(--basic-pressing-gray);
 }
-.site-navigation .shop {
-  border-bottom: 2px solid var(--basic-red); 
+.shop {
+  position: relative;
+}
+.shop::after {
+  content: "";
+  position: absolute;
+  width: 75px;
+  height: 2px;
+  top: 42px;
+  background-color: var(--basic-red);
+  
 }
 .slider-section {
   position: relative;
