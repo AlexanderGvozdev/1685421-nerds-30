@@ -155,6 +155,7 @@ img {
   margin: 0;
   padding: 0;
   padding-bottom: 62px;
+  overflow: hidden;
 }
 .slider-list {
  padding: 0;
@@ -430,6 +431,9 @@ img {
 }
 .phone {
   margin-bottom: 29px;
+}
+.phone a {
+  color: var(--basic-black);
 }
 .adress-button {
   font-size: 16px;
@@ -713,14 +717,23 @@ img {
   position: absolute;
   top: 30px;
   left: 0;
-  width: 4px;
-  height: 4px;
+  width: 20px;
+  height: 20px;
   padding: 0;
-  border: 10px solid #ffffff;
-  background-color: #ababab;
+  background-color: #ffffff;
   border-radius: 50%;
   box-shadow: 0 2px 1px 0 #cfcfcf;
   cursor: pointer;
+}
+.range-controls .toggle::before {
+  content: "";
+  position: absolute;
+  width: 4px;
+  height: 4px;
+  background-color: #ABABAB;
+  border-radius: 50%;
+  top: 8px;
+  left: 8px;
 }
 .range-controls .toggle-min {
   left: 18px;
@@ -840,7 +853,6 @@ img {
 }
 .fieldset-1 {
   margin-bottom: 54px;
-  outline: 5px solid #ff0000;
 }
 .fieldset-2 {
   margin-bottom: 28px;
