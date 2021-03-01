@@ -584,7 +584,7 @@ img {
   color: var(--basic-black);
   background-color: var(--basic-white);
   box-shadow: 0 30px 50px rgba(0, 0, 0, 0.7);
-  padding-top: 63px;
+  padding-top: 30px;
   padding-bottom: 84px;
   padding-left: 100px;
   padding-right: 100px;
@@ -595,8 +595,8 @@ img {
 .modal-close {
   position: absolute;
   cursor: pointer;
-  top: 110px;
-  right: 89px;
+  top: 78px;
+  right: 90px;
   width: 21px;
   height: 21px;
   border: 0;
@@ -625,6 +625,7 @@ img {
   font-size: 45px;
   line-height: 1;
   font-weight: 700;
+  margin-bottom: 42px;
 }
 .contact-form-flex-container {
   width: 760px;
@@ -632,13 +633,21 @@ img {
   flex-wrap: wrap;
   justify-content: space-between;
 }
-.contact-form p:nth-of-type(3) {
+.letter-form {
   flex-grow: 1;
+  margin-bottom: -6px;
+}
+.letter-form label {
+  display: block;
+  margin-bottom: 9px;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 700;
 }
 .contact-form-item {
   width: 360px;
   margin-top: 0;
-  margin-bottom: 10px;
+  margin-bottom: 18px;
   font: inherit;
 }
 .contact-form-item label {
@@ -652,12 +661,16 @@ img {
   line-height: 18px;
   padding: 16px 14px;
   width: 360px;
+  height: 49px;
   font: inherit;
   background-color: transparent;
   border: 2px solid var(--basic-lightgray);
 }
 .contact-form-field:focus {
   border-color: var(--basic-black);
+}
+.contact-form-submit {
+  width: 260px;
 }
 .filter-item {
   margin: 0;
@@ -1019,6 +1032,8 @@ img {
   font-size: 16px;
   line-height: 18px;
   color: var(--basic-color-catalog-paragraph);
+  margin-left: -3px;
+  margin-top: 13px;
 }
 .catalog-item:hover {
   background-color: var(--basic-gray);
@@ -1028,6 +1043,7 @@ img {
   font-size: 18px;
   line-height: 30px;
   font-weight: 700;
+  margin-top: 16px;
   color: var(--basic-black);
 }
 .catalog-item-name:hover {
@@ -1039,7 +1055,6 @@ img {
 .catalog-modal {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
   text-align: center;
   min-height: 231px;
@@ -1064,6 +1079,7 @@ img {
 }
 .button-catalog {
   width: 200px;
+  margin-top: 17px;
 }
 .button-catalog:active {
   color: var(--basic-white);
