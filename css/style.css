@@ -433,13 +433,13 @@ img {
   padding-top: 48px;
   padding-left: 49px;
 }
-.adress p {
+.adress div {
   line-height: 18px;
   padding-left: 49px;
-  padding-top: 4px;
+  padding-top: 6px;
 }
 .phone {
-  margin-bottom: 29px;
+  margin-bottom: 53px;
 }
 .phone a {
   color: var(--basic-black);
@@ -604,6 +604,52 @@ img {
   width: 960px;
   height: 590px;
   z-index: 3;
+}
+.modal-show {
+  display: block;
+  animation: bounce 0.6s;
+}
+.modal-error {
+  animation: shake 0.6s;
+}
+@keyframes bounce {
+  0% {
+    transform: translateY(-2000px);
+  }
+
+  70% {
+    transform: translateY(30px);
+  }
+
+  90% {
+    transform: translateY(-10px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+  
+}
+@keyframes shake {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translateX(-10px);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translateX(10px);
+  }
 }
 .modal-close {
   position: absolute;
