@@ -20,6 +20,7 @@ letterClose.addEventListener("click", function (evt) {
     if (!loginLogin.value) {
     evt.preventDefault();
     letterPopup.classList.add("modal-error");
+    }
 });
 
 window.addEventListener("keydown", function (evt) {
