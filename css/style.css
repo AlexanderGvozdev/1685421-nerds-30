@@ -405,12 +405,44 @@ img {
 .partners-item:active {
   opacity: 0.2;
 }
+.partners-1 {
+  position: relative;
+}
+.partners-1::after {
+  content: "";
+  position: absolute;
+  background-color: var(--basic-black);
+  width: 2px;
+  height: 52px;
+  top: 2px;
+  left: 248px;
+}
 .partners-2 {
   margin-top: -13px;
   margin-left: -9px;
+  position: relative;
+}
+.partners-2::after {
+  content: "";
+  position: absolute;
+  background-color: var(--basic-black);
+  width: 2px;
+  height: 52px;
+  top: 19px;
+  left: 253px;
 }
 .partners-3 {
   margin-top: -9px;
+  position: relative;
+}
+.partners-3::after {
+  content: "";
+  position: absolute;
+  background-color: var(--basic-black);
+  width: 2px;
+  height: 52px;
+  top: 0px;
+  left: 241px;
 }
 .partners-4 {
  margin-top: -1px;
