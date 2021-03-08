@@ -1,17 +1,15 @@
 <!DOCTYPE html>
 <html lang="ru">
-
 <head>
   <meta charset="utf-8">
   <title>Нёрдс каталог</title>
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.min.css">
   <link rel="icon" href="favicon.ico">
   <link rel="manifest" href="manifest.webmanifest">
 </head>
-
 <body class="page-body">
   <header class="main-header">
     <div class="container">
@@ -86,8 +84,6 @@
                 </li>
               </ul>
             </fieldset>
-
-
             <fieldset class="form-fieldset fieldset-3">
               <legend class="title-filter">особенности:</legend>
               <ul class="form-checkbox-list list-reset">
@@ -116,7 +112,6 @@
             <button class="button form-submit-button" type="submit">Показать</button>
           </form>
         </section>
-
         <section class="catalog-section">
           <h2 class="visually-hidden">список макетов</h2>
           <div class="sorting-flex-container">
@@ -131,7 +126,6 @@
             <button class="button-up" type="button" aria-label="up"></button>
           </div>
           </div>
-
           <ul class="catalog-list list-reset">
             <li class="catalog-item">
               <img class="browser-catalog" src="img/browser.svg" width="359" alt="панель браузера">
@@ -190,9 +184,6 @@
               </div>
             </li>
           </ul>
-
-
-
           <ul class="pagination-list list-reset">
             <li class="pagination-item">
               <a class="pagination-button">1</a>
@@ -221,9 +212,8 @@
             ул. Б. Конюшенная, д. 19/8<br>
             <p class="phone">тел.<a href="tel:+78122757575"> +7 (812) 275-75-75</a></p>
           </div>
-          <a class="adress-button" href="#">напишите нам</a>
+          <a class="adress-button" href="contact.html">напишите нам</a>
         </div>
-        <img class="marker" src="img/map-marker.png" width="231" height="190" alt="маркер на карте">
       </div>
     </section>
     <div class="container">
@@ -258,7 +248,27 @@
       </section>
     </div>
   </footer>
-
+  <section class="modal">
+    <h2>Напишите нам</h2>
+    <form class="contact-form" action="https://echo.htmlacademy.ru" method="post">
+      <div class="contact-form-flex-container">
+      <p class="contact-form-item">
+        <label for="login-login">Ваше имя:</label>
+        <input class="contact-form-field" id="login-login" type="text" name="login" placeholder="Имя Фамилия">
+      </p>
+      <p class="contact-form-item">
+        <label for="email-email">Ваш email:</label>
+        <input class="contact-form-field" id="email-email" type="email" name="email" placeholder="email@example.com">
+      </p>
+      <p class="letter-form">
+        <label for="text-text">Текст письма:</label>
+        <textarea class="letter-area" id="text-text" name="text" placeholder="В свободной форме"></textarea>
+      </p>
+      </div>
+      <button class="button contact-form-submit" type="submit">отправить</button>
+    </form>
+    <button class="modal-close" type="button" aria-label="Закрыть"></button>
+  </section>
+  <script src="js/main.min.js"></script>
 </body>
-
 </html>

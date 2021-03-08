@@ -499,11 +499,6 @@ img {
   background-color: var(--basic-pressing-red);
   color: rgba(255, 255, 255, 0.3);
 }
-.marker {
-  position: relative;
-  right: -63%;
-  top: -281px;
-}
 .button {
   font-size: 16px;
   line-height: 18px;
