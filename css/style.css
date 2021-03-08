@@ -449,6 +449,7 @@ img {
 }
 .map {
   max-height: 420px;
+  background-color: var(--basic-gray);
   background: url(../img/map.jpg) no-repeat center / cover;
 }
 .adress {
@@ -469,12 +470,13 @@ img {
   line-height: 18px;
   padding-left: 49px;
   padding-top: 6px;
+  color: var(--basic-color-catalog-paragraph);
 }
 .phone {
   margin-bottom: 53px;
 }
 .phone a {
-  color: var(--basic-black);
+  color: var(--basic-color-catalog-paragraph);
 }
 .adress-button {
   font-size: 16px;
