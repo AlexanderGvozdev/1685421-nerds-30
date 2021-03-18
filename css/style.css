@@ -358,17 +358,12 @@ img {
   padding-left: 15px;
 }
 .description-list-2 {
-  display: flex;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(3,100px);
+  grid-column-gap: 19px;
   margin: 0;
   margin-top: 28px;
   padding: 0;
-}
-.desc-item-1 {
- margin-right: 21px;
-}
-.desc-item-3 {
- margin-left: 22px;
 }
 .description-item-2 b {
   font-size: 45px;
@@ -450,9 +445,22 @@ img {
 .map {
   max-height: 420px;
   background-color: var(--basic-gray);
-  background: url(../img/map.jpg) no-repeat center / cover;
+}
+.iframe-index {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top: 1892px;
+} 
+.iframe-catalog {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top: 2622px;
 }
 .adress {
+  position: relative;
+  z-index: 3;
   width: 319px;
   height: 308px;
   background-color: var(--basic-white);
@@ -671,8 +679,9 @@ img {
   height: 118px;
   width: 100%;
   margin-bottom: 47px;
-  padding-top: 16px;
-  padding-left: 16px;
+  padding-bottom: 70px;
+  padding-left: 15px;
+  border: 2px solid var(--basic-lightgray);
 }
 .modal h2 {
   font-size: 45px;
@@ -688,7 +697,7 @@ img {
 }
 .letter-form {
   flex-grow: 1;
-  margin-bottom: -6px;
+  margin-bottom: 0;
 }
 .letter-form label {
   display: block;
